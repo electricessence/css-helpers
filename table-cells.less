@@ -1,0 +1,148 @@
+// This file defines CSS classes and rules that only apply to the cell's immediate ancestor.
+// <table class="cells-top">...</table> will vertically align all the cells of a that table but leave any sub-tables unaffected.
+
+.cells {
+
+	.applyToCell (@contents) {
+
+		table& > * > tr,
+		table& > tr,
+		thead& > tr,
+		tbody& > tr,
+		tfoot& > tr,
+		tr& {
+			> * {
+				@contents();
+			}
+		}
+	}
+
+	.applyToCell (@contents,@cellType) {
+
+		table& > * > tr,
+		table& > tr,
+		thead& > tr,
+		tbody& > tr,
+		tfoot& > tr,
+		tr& {
+			> @{cellType} {
+				@contents();
+			}
+		}
+	}
+
+	.applyValueToCell (@property,@value) {
+		.applyToCell({ @{property}: @value; });
+	}
+
+	.applyValueToCell (@property,@value,@cellType) {
+		.applyToCell({ @{property}: @value; }, @cellType);
+	}
+
+	// Vertical cell alignment.
+
+	.cellsVerticalAlign(@align) {
+		.applyValueToCell(vertical-align, @align);
+	}
+
+	&-top {
+		.cellsVerticalAlign(top);
+	}
+	&-middle {
+		.cellsVerticalAlign(middle);
+	}
+	&-bottom {
+		.cellsVerticalAlign(bottom);
+	}
+
+	// Horizontal cell alignment.
+
+	.thHorizontalAlign (@align) {
+		.applyValueToCell(text-align, @align, th);
+	}
+
+	&-left-th {
+		.thHorizontalAlign(left);
+	}
+	&-center-th {
+		.thHorizontalAlign(center);
+	}
+	&-right-th {
+		.thHorizontalAlign(right);
+	}
+
+	.cellsPadding(@padding) {
+		.applyValueToCell(padding, @padding);
+	}
+
+	&-padding {
+
+		&-1ex {
+			.cellsPadding(1ex);
+		}
+
+		&-2ex {
+			.cellsPadding(2ex);
+		}
+
+		&-3ex {
+			.cellsPadding(2ex);
+		}
+
+		&-1rem {
+			.cellsPadding(1rem);
+		}
+
+		&-1em {
+			.cellsPadding(1em);
+		}
+
+	}
+
+	&-border {
+
+		.borderSetValue(@value) {
+
+			.borderSet(@name, @property) {
+				&-@{name}-@{value} {
+					.applyValueToCell(@property, @value);
+				}
+			}
+
+			.borderSet(@name, @property1, @property2) {
+				&-@{name}-@{value} {
+					.applyToCell({ @{property1}: @value; @{property2}: @value; });
+				}
+			}
+
+			.borderSet(top, border-top-width);
+			.borderSet(right, border-right-width);
+			.borderSet(bottom, border-bottom-width);
+			.borderSet(left, border-left-width);
+
+			.borderSet(tb, border-top-width, border-bottom-width);
+			.borderSet(lr, border-left-width, border-right-width);
+		}
+
+		.borderSetValue(0);
+		.borderSetValue(1px);
+		.borderSetValue(2px);
+
+		&-inneronly {
+
+			// Wrap in local function to enforce automatic formatting.
+			.firstlast() {
+				&:first-child {
+					border-left-width: 0;
+				}
+				&:last-child {
+					border-right-width: 0;
+				}
+			}
+
+			.applyToCell({ .firstlast() });
+		}
+
+	}
+
+}

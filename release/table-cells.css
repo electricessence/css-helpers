@@ -1,0 +1,254 @@
+table.cells-top > * > tr > *,
+table.cells-top > tr > *,
+thead.cells-top > tr > *,
+tbody.cells-top > tr > *,
+tfoot.cells-top > tr > *,
+tr.cells-top > * {
+  vertical-align: top;
+}
+table.cells-middle > * > tr > *,
+table.cells-middle > tr > *,
+thead.cells-middle > tr > *,
+tbody.cells-middle > tr > *,
+tfoot.cells-middle > tr > *,
+tr.cells-middle > * {
+  vertical-align: middle;
+}
+table.cells-bottom > * > tr > *,
+table.cells-bottom > tr > *,
+thead.cells-bottom > tr > *,
+tbody.cells-bottom > tr > *,
+tfoot.cells-bottom > tr > *,
+tr.cells-bottom > * {
+  vertical-align: bottom;
+}
+table.cells-left-th > * > tr > th,
+table.cells-left-th > tr > th,
+thead.cells-left-th > tr > th,
+tbody.cells-left-th > tr > th,
+tfoot.cells-left-th > tr > th,
+tr.cells-left-th > th {
+  text-align: left;
+}
+table.cells-center-th > * > tr > th,
+table.cells-center-th > tr > th,
+thead.cells-center-th > tr > th,
+tbody.cells-center-th > tr > th,
+tfoot.cells-center-th > tr > th,
+tr.cells-center-th > th {
+  text-align: center;
+}
+table.cells-right-th > * > tr > th,
+table.cells-right-th > tr > th,
+thead.cells-right-th > tr > th,
+tbody.cells-right-th > tr > th,
+tfoot.cells-right-th > tr > th,
+tr.cells-right-th > th {
+  text-align: right;
+}
+table.cells-padding-1ex > * > tr > *,
+table.cells-padding-1ex > tr > *,
+thead.cells-padding-1ex > tr > *,
+tbody.cells-padding-1ex > tr > *,
+tfoot.cells-padding-1ex > tr > *,
+tr.cells-padding-1ex > * {
+  padding: 1ex;
+}
+table.cells-padding-2ex > * > tr > *,
+table.cells-padding-2ex > tr > *,
+thead.cells-padding-2ex > tr > *,
+tbody.cells-padding-2ex > tr > *,
+tfoot.cells-padding-2ex > tr > *,
+tr.cells-padding-2ex > * {
+  padding: 2ex;
+}
+table.cells-padding-3ex > * > tr > *,
+table.cells-padding-3ex > tr > *,
+thead.cells-padding-3ex > tr > *,
+tbody.cells-padding-3ex > tr > *,
+tfoot.cells-padding-3ex > tr > *,
+tr.cells-padding-3ex > * {
+  padding: 2ex;
+}
+table.cells-padding-1rem > * > tr > *,
+table.cells-padding-1rem > tr > *,
+thead.cells-padding-1rem > tr > *,
+tbody.cells-padding-1rem > tr > *,
+tfoot.cells-padding-1rem > tr > *,
+tr.cells-padding-1rem > * {
+  padding: 1rem;
+}
+table.cells-padding-1em > * > tr > *,
+table.cells-padding-1em > tr > *,
+thead.cells-padding-1em > tr > *,
+tbody.cells-padding-1em > tr > *,
+tfoot.cells-padding-1em > tr > *,
+tr.cells-padding-1em > * {
+  padding: 1em;
+}
+table.cells-border-top-0 > * > tr > *,
+table.cells-border-top-0 > tr > *,
+thead.cells-border-top-0 > tr > *,
+tbody.cells-border-top-0 > tr > *,
+tfoot.cells-border-top-0 > tr > *,
+tr.cells-border-top-0 > * {
+  border-top-width: 0;
+}
+table.cells-border-right-0 > * > tr > *,
+table.cells-border-right-0 > tr > *,
+thead.cells-border-right-0 > tr > *,
+tbody.cells-border-right-0 > tr > *,
+tfoot.cells-border-right-0 > tr > *,
+tr.cells-border-right-0 > * {
+  border-right-width: 0;
+}
+table.cells-border-bottom-0 > * > tr > *,
+table.cells-border-bottom-0 > tr > *,
+thead.cells-border-bottom-0 > tr > *,
+tbody.cells-border-bottom-0 > tr > *,
+tfoot.cells-border-bottom-0 > tr > *,
+tr.cells-border-bottom-0 > * {
+  border-bottom-width: 0;
+}
+table.cells-border-left-0 > * > tr > *,
+table.cells-border-left-0 > tr > *,
+thead.cells-border-left-0 > tr > *,
+tbody.cells-border-left-0 > tr > *,
+tfoot.cells-border-left-0 > tr > *,
+tr.cells-border-left-0 > * {
+  border-left-width: 0;
+}
+table.cells-border-tb-0 > * > tr > *,
+table.cells-border-tb-0 > tr > *,
+thead.cells-border-tb-0 > tr > *,
+tbody.cells-border-tb-0 > tr > *,
+tfoot.cells-border-tb-0 > tr > *,
+tr.cells-border-tb-0 > * {
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+table.cells-border-lr-0 > * > tr > *,
+table.cells-border-lr-0 > tr > *,
+thead.cells-border-lr-0 > tr > *,
+tbody.cells-border-lr-0 > tr > *,
+tfoot.cells-border-lr-0 > tr > *,
+tr.cells-border-lr-0 > * {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+table.cells-border-top-1px > * > tr > *,
+table.cells-border-top-1px > tr > *,
+thead.cells-border-top-1px > tr > *,
+tbody.cells-border-top-1px > tr > *,
+tfoot.cells-border-top-1px > tr > *,
+tr.cells-border-top-1px > * {
+  border-top-width: 1px;
+}
+table.cells-border-right-1px > * > tr > *,
+table.cells-border-right-1px > tr > *,
+thead.cells-border-right-1px > tr > *,
+tbody.cells-border-right-1px > tr > *,
+tfoot.cells-border-right-1px > tr > *,
+tr.cells-border-right-1px > * {
+  border-right-width: 1px;
+}
+table.cells-border-bottom-1px > * > tr > *,
+table.cells-border-bottom-1px > tr > *,
+thead.cells-border-bottom-1px > tr > *,
+tbody.cells-border-bottom-1px > tr > *,
+tfoot.cells-border-bottom-1px > tr > *,
+tr.cells-border-bottom-1px > * {
+  border-bottom-width: 1px;
+}
+table.cells-border-left-1px > * > tr > *,
+table.cells-border-left-1px > tr > *,
+thead.cells-border-left-1px > tr > *,
+tbody.cells-border-left-1px > tr > *,
+tfoot.cells-border-left-1px > tr > *,
+tr.cells-border-left-1px > * {
+  border-left-width: 1px;
+}
+table.cells-border-tb-1px > * > tr > *,
+table.cells-border-tb-1px > tr > *,
+thead.cells-border-tb-1px > tr > *,
+tbody.cells-border-tb-1px > tr > *,
+tfoot.cells-border-tb-1px > tr > *,
+tr.cells-border-tb-1px > * {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+table.cells-border-lr-1px > * > tr > *,
+table.cells-border-lr-1px > tr > *,
+thead.cells-border-lr-1px > tr > *,
+tbody.cells-border-lr-1px > tr > *,
+tfoot.cells-border-lr-1px > tr > *,
+tr.cells-border-lr-1px > * {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+table.cells-border-top-2px > * > tr > *,
+table.cells-border-top-2px > tr > *,
+thead.cells-border-top-2px > tr > *,
+tbody.cells-border-top-2px > tr > *,
+tfoot.cells-border-top-2px > tr > *,
+tr.cells-border-top-2px > * {
+  border-top-width: 2px;
+}
+table.cells-border-right-2px > * > tr > *,
+table.cells-border-right-2px > tr > *,
+thead.cells-border-right-2px > tr > *,
+tbody.cells-border-right-2px > tr > *,
+tfoot.cells-border-right-2px > tr > *,
+tr.cells-border-right-2px > * {
+  border-right-width: 2px;
+}
+table.cells-border-bottom-2px > * > tr > *,
+table.cells-border-bottom-2px > tr > *,
+thead.cells-border-bottom-2px > tr > *,
+tbody.cells-border-bottom-2px > tr > *,
+tfoot.cells-border-bottom-2px > tr > *,
+tr.cells-border-bottom-2px > * {
+  border-bottom-width: 2px;
+}
+table.cells-border-left-2px > * > tr > *,
+table.cells-border-left-2px > tr > *,
+thead.cells-border-left-2px > tr > *,
+tbody.cells-border-left-2px > tr > *,
+tfoot.cells-border-left-2px > tr > *,
+tr.cells-border-left-2px > * {
+  border-left-width: 2px;
+}
+table.cells-border-tb-2px > * > tr > *,
+table.cells-border-tb-2px > tr > *,
+thead.cells-border-tb-2px > tr > *,
+tbody.cells-border-tb-2px > tr > *,
+tfoot.cells-border-tb-2px > tr > *,
+tr.cells-border-tb-2px > * {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+table.cells-border-lr-2px > * > tr > *,
+table.cells-border-lr-2px > tr > *,
+thead.cells-border-lr-2px > tr > *,
+tbody.cells-border-lr-2px > tr > *,
+tfoot.cells-border-lr-2px > tr > *,
+tr.cells-border-lr-2px > * {
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+table.cells-border-inneronly > * > tr > *:first-child,
+table.cells-border-inneronly > tr > *:first-child,
+thead.cells-border-inneronly > tr > *:first-child,
+tbody.cells-border-inneronly > tr > *:first-child,
+tfoot.cells-border-inneronly > tr > *:first-child,
+tr.cells-border-inneronly > *:first-child {
+  border-left-width: 0;
+}
+table.cells-border-inneronly > * > tr > *:last-child,
+table.cells-border-inneronly > tr > *:last-child,
+thead.cells-border-inneronly > tr > *:last-child,
+tbody.cells-border-inneronly > tr > *:last-child,
+tfoot.cells-border-inneronly > tr > *:last-child,
+tr.cells-border-inneronly > *:last-child {
+  border-right-width: 0;
+}

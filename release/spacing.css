@@ -1,0 +1,27 @@
+/* nowrap shortcut */
+.nowrap {
+  white-space: nowrap;
+}
+/* For use with aligning text and cell height to form element dimensions. */
+input.invisible-width {
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  visibility: hidden;
+}
+/* A simple 1ex (x height) spacer. */
+.spacer {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 1ex;
+  height: 1ex;
+}
+br.spacer {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0.5ex;
+}
