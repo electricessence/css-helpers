@@ -1,0 +1,21 @@
+.scroll {
+
+	.scrollOptions(@prop) {
+		@{prop}: scroll;
+		&-hidden {
+			@{prop}: hidden;
+		}
+		&-auto {
+			@{prop}: auto;
+		}
+	}
+
+	.scrollOptions(overflow);
+
+	&-x {
+		.scrollOptions(overflow-x);
+	}
+	&-y {
+		.scrollOptions(overflow-y);
+	}
+}

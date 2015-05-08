@@ -1,0 +1,25 @@
+@import "_flex";
+
+.flex {
+	&, &-x, &-y {
+
+		.flexBox();
+
+		&.align-center {
+			.flexAlignItems(center);
+		}
+	}
+
+	&-x {
+		.flexDirection(row);
+	}
+
+	&-y {
+		.flexDirection(column);
+	}
+
+	// For tagging a fixed box.
+	&-1 {
+		.flexRatio(1);
+	}
+}

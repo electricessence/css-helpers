@@ -1,0 +1,33 @@
+.prop-LR(@prop, @value) {
+	@{prop}-left: @value;
+	@{prop}-right: @value;
+}
+
+.prop-TB(@prop, @value) {
+	@{prop}-top: @value;
+	@{prop}-bottom: @value;
+}
+
+.margin-LR(@value) {
+	.prop-LR(margin, @value);
+}
+
+.margin-TB(@value) {
+	.prop-TB(margin, @value);
+}
+
+.padding-LR(@value) {
+	.prop-LR(padding, @value);
+}
+
+.padding-TB(@value) {
+	.prop-TB(padding, @value);
+}
+
+.border-LR(@value) {
+	.prop-LR(border, @value);
+}
+
+.border-TB(@value) {
+	.prop-TB(border, @value);
+}

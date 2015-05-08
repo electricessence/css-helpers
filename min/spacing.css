@@ -1,2 +1,2 @@
-.nowrap{white-space:nowrap}input.invisible-width{width:0;padding-left:0;padding-right:0;margin-left:0;margin-right:0;visibility:hidden}.spacer{display:block;margin:0;padding:0;width:1ex;height:1ex}br.spacer{width:0;height:0;padding:0;margin:.5ex}
+.invisible,.invisible-width{visibility:hidden}.nowrap{white-space:nowrap}.invisible-width{width:0;padding-left:0;padding-right:0;margin-left:0;margin-right:0}span.spacer,span.spacer-x,span.spacer-y{display:inline-block}.spacer,.spacer-x{width:1ex}.spacer,.spacer-y{height:1ex}br.spacer{width:0;height:0;padding:0;margin:.5ex}
 /*# sourceMappingURL=spacing.css.map */

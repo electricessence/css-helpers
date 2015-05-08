@@ -2,8 +2,11 @@
 .nowrap {
   white-space: nowrap;
 }
+.invisible {
+  visibility: hidden;
+}
 /* For use with aligning text and cell height to form element dimensions. */
-input.invisible-width {
+.invisible-width {
   width: 0;
   padding-left: 0;
   padding-right: 0;
@@ -11,12 +14,17 @@ input.invisible-width {
   margin-right: 0;
   visibility: hidden;
 }
-/* A simple 1ex (x height) spacer. */
-.spacer {
-  display: block;
-  margin: 0;
-  padding: 0;
+span.spacer,
+span.spacer-x,
+span.spacer-y {
+  display: inline-block;
+}
+.spacer,
+.spacer-x {
   width: 1ex;
+}
+.spacer,
+.spacer-y {
   height: 1ex;
 }
 br.spacer {
