@@ -20,17 +20,13 @@
 }
 .flex-x {
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: row;
   -webkit-flex-direction: row;
-  -moz-box-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 .flex-y {
   -webkit-box-orient: vertical;
-  -webkit-box-direction: column;
   -webkit-flex-direction: column;
-  -moz-box-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
