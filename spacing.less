@@ -21,24 +21,38 @@
 
 .spacer {
 
-	&, &-x, &-y {
-		span& {
-			display: inline-block;
+	.spacerTemplate(@spacing) {
+		&, &-x {
+			width: @spacing;
+		}
+		&, &-y {
+			height: @spacing;
+		}
+
+		br& {
+			margin: @spacing/2;
 		}
 	}
 
 	@default-spacer: 1ex;
-	&, &-x {
-		width: @default-spacer;
-	}
-	&, &-y {
-		height: @default-spacer;
+	.spacerTemplate(@default-spacer);
+
+	&-2 {
+		.spacerTemplate(@default-spacer*2);
 	}
 
-	br& {
-		width: 0;
-		height: 0;
-		padding: 0;
-		margin: @default-spacer/2;
+	&, &-2 {
+		&, &-x, &-y {
+			span& {
+				display: inline-block;
+			}
+			br& {
+				// Need to override width and height.
+				width: 0;
+				height: 0;
+				padding: 0;
+			}
+		}
 	}
+
 }

@@ -14,11 +14,6 @@
   margin-right: 0;
   visibility: hidden;
 }
-span.spacer,
-span.spacer-x,
-span.spacer-y {
-  display: inline-block;
-}
 .spacer,
 .spacer-x {
   width: 1ex;
@@ -28,10 +23,36 @@ span.spacer-y {
   height: 1ex;
 }
 br.spacer {
+  margin: 0.5ex;
+}
+.spacer-2,
+.spacer-2-x {
+  width: 2ex;
+}
+.spacer-2,
+.spacer-2-y {
+  height: 2ex;
+}
+br.spacer-2 {
+  margin: 1ex;
+}
+span.spacer,
+span.spacer-2,
+span.spacer-x,
+span.spacer-2-x,
+span.spacer-y,
+span.spacer-2-y {
+  display: inline-block;
+}
+br.spacer,
+br.spacer-2,
+br.spacer-x,
+br.spacer-2-x,
+br.spacer-y,
+br.spacer-2-y {
   width: 0;
   height: 0;
   padding: 0;
-  margin: 0.5ex;
 }
 
 /*# sourceMappingURL=spacing.css.map */
