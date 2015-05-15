@@ -5,19 +5,22 @@
 
 .invisible {
 	visibility: hidden;
+
+	/* For use with aligning text and cell height to form element dimensions. */
+	&-width {
+
+		visibility: hidden;
+		width: 0;
+
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+
 }
 
-/* For use with aligning text and cell height to form element dimensions. */
-.invisible-width {
-	width: 0;
-
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
-
-	visibility: hidden;
-}
 
 .spacer {
 

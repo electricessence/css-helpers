@@ -1,12 +1,13 @@
 .scroll {
 
 	.scrollOptions(@prop) {
-		@{prop}: scroll;
+		// Avoid specificity issues with !important.
+		@{prop}: scroll !important;
 		&-hidden {
-			@{prop}: hidden;
+			@{prop}: hidden !important;
 		}
 		&-auto {
-			@{prop}: auto;
+			@{prop}: auto !important;
 		}
 	}
 

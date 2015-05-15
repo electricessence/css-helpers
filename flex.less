@@ -1,25 +1,30 @@
 @import "_flex";
 
 .flex {
-	&, &-x, &-y {
-
+	&, &-x, &-y, &ible-body, &-middle {
 		.flexBox();
-
-		&.align-center {
-			.flexAlignItems(center);
-		}
 	}
 
 	&-x {
 		.flexDirection(row);
 	}
 
-	&-y {
+	&-y, &ible-body {
 		.flexDirection(column);
 	}
 
 	// For tagging a fixed box.
-	&-1 {
+	&-1, &ible-body > .body {
 		.flexRatio(1);
+	}
+
+	&-middle {
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+
+		> span {
+			display: inline-flex;
+		}
 	}
 }
