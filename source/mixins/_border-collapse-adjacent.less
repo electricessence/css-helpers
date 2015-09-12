@@ -1,18 +1,17 @@
 .border-collapse-adjacent-LR() {
 	&:nth-child(n+2) {
 		html:not([dir=rtl]) & {
-			border-left:0;
+			border-left: 0;
 		}
 
 		html[dir=rtl] & {
-			border-right:0;
+			border-right: 0;
 		}
 	}
-
 }
 
 .border-collapse-adjacent-TB() {
 	&:nth-child(n+2) {
-		border-top:0;
+		border-top: 0;
 	}
 }

@@ -4,15 +4,15 @@
 }
 .invisible {
   visibility: hidden;
+  /* For use with aligning text and cell height to form element dimensions. */
 }
-/* For use with aligning text and cell height to form element dimensions. */
 .invisible-width {
+  visibility: hidden;
   width: 0;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
-  visibility: hidden;
 }
 .spacer,
 .spacer-x {
@@ -54,5 +54,4 @@ br.spacer-2-y {
   height: 0;
   padding: 0;
 }
-
 /*# sourceMappingURL=spacing.css.map */

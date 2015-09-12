@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Less" pattern="file:source//*.less&amp;&amp;!file:source//_*.less" />
+</component>
