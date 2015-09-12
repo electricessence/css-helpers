@@ -100,7 +100,8 @@ gulp.task(
 
 		gulp.src(PATH_LESS + '/partials/*.less')
 			.pipe(lessToScss())
-			.pipe(gulp.dest(PATH_SASS + '/partials'));
+			.pipe(gulp.dest(PATH_SASS + '/partials'))
+		;
 
 		gulp.src(PATH_LESS + '/*.less')
 			.pipe(lessToScss())
