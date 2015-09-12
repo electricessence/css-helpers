@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/212412934/dev/css-helpers/elide.less"],"names":[],"mappings":"AAAA,OACC,gBACA,uBACA","file":"elide.css","sourcesContent":[".elide {\n\toverflow:hidden;\n\ttext-overflow:ellipsis;\n\t-o-text-overflow: ellipsis;\n}"],"sourceRoot":"/source/"}

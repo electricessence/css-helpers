@@ -1,0 +1,7 @@
+.elide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=elide.css.map */

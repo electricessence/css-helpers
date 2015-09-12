@@ -1,73 +1,59 @@
 var gulp = require('gulp');
 
-(function(){
-	var less = require('gulp-less');
-	var sourcemaps = require('gulp-sourcemaps');
+var less = require('gulp-less');
+var sourcemaps = require('gulp-sourcemaps'); //https://github.com/floridoo/gulp-sourcemaps
+var rename = require('gulp-rename');
 
-	var LessPluginCleanCSS = require("less-plugin-clean-css"),
-		cleancss = new LessPluginCleanCSS({advanced: true});
+var LessPluginCleanCSS = require('less-plugin-clean-css'),
+	cleancss = new LessPluginCleanCSS({advanced: true});
 
-	var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-		autoprefix = new LessPluginAutoPrefix({browsers: ["last 2 versions"]});
+const _MIN_CSS = '.min.css';
+const PATH_LESS = './less';
+const PATH_CSS = './css';
+const PATH_CSS_RELEASE = PATH_CSS + '/release';
 
-	// The following tasks approximately mirror what the WebStorm File Watchers do.
-
-	var lessFiles = ['*.less', '!_*.less'];
-
-	gulp.task(
-		'less', function() {
-
-			gulp.src(lessFiles)
-				.pipe(sourcemaps.init())
-				.pipe(less())
-				.pipe(sourcemaps.write('./'))
-				.pipe(gulp.dest('./'))
-			;
-
-		});
-
-	gulp.task(
-		'less.release', function() {
-
-			gulp.src(lessFiles)
-				.pipe(less())
-				.pipe(gulp.dest('./release'))
-			;
-
-		});
-
-	gulp.task(
-		'less.min', function() {
-
-			gulp.src(lessFiles)
-				.pipe(sourcemaps.init())
-				.pipe(
-				less(
-					{
-						plugins: [cleancss]
-					}))
-				.pipe(sourcemaps.write('./'))
-				.pipe(gulp.dest('./min'))
-			;
-
-		});
-
-	gulp.task(
-		'less.release.min', function() {
-
-			gulp.src(lessFiles)
-				.pipe(
-				less(
-					{
-						plugins: [cleancss]
-					}))
-				.pipe(gulp.dest('./release/min'))
-			;
-
-		});
-})();
+var lessFiles = [PATH_LESS + '/*.less', PATH_LESS + '/!_*.less'];
 
 gulp.task(
-	'default',
-	['less','less.release','less.min','less.release.min'],
-	function() {});
+	'less', function () {
+
+		// Standard with less maps.
+		gulp.src(lessFiles)
+			.pipe(sourcemaps.init())
+			.pipe(less())
+			.pipe(sourcemaps.write('.', {includeContent: false, sourceRoot: '../less'}))
+			.pipe(gulp.dest(PATH_CSS))
+		;
+
+		// Minified with less maps.
+		gulp.src(lessFiles)
+			.pipe(sourcemaps.init())
+			.pipe(less({plugins: [cleancss]}))
+			.pipe(rename({extname: _MIN_CSS}))
+			.pipe(sourcemaps.write('.', {includeContent: false, sourceRoot: '../less'}))
+			.pipe(gulp.dest(PATH_CSS))
+		;
+
+
+	});
+
+gulp.task(
+	'less.release', function () {
+
+		// Standard with less maps.
+		gulp.src(lessFiles)
+			.pipe(less())
+			.pipe(gulp.dest(PATH_CSS_RELEASE))
+		;
+
+		// Minified with less maps.
+		gulp.src(lessFiles)
+			.pipe(less({plugins: [cleancss]}))
+			.pipe(rename({extname: _MIN_CSS}))
+			.pipe(gulp.dest(PATH_CSS_RELEASE))
+		;
+
+	});
+
+
+gulp.task('default', ['less', 'less.release']);

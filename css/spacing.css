@@ -1,0 +1,58 @@
+/* nowrap shortcut */
+.nowrap {
+  white-space: nowrap;
+}
+.invisible {
+  visibility: hidden;
+  /* For use with aligning text and cell height to form element dimensions. */
+}
+.invisible-width {
+  visibility: hidden;
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.spacer,
+.spacer-x {
+  width: 1ex;
+}
+.spacer,
+.spacer-y {
+  height: 1ex;
+}
+br.spacer {
+  margin: 0.5ex;
+}
+.spacer-2,
+.spacer-2-x {
+  width: 2ex;
+}
+.spacer-2,
+.spacer-2-y {
+  height: 2ex;
+}
+br.spacer-2 {
+  margin: 1ex;
+}
+span.spacer,
+span.spacer-2,
+span.spacer-x,
+span.spacer-2-x,
+span.spacer-y,
+span.spacer-2-y {
+  display: inline-block;
+}
+br.spacer,
+br.spacer-2,
+br.spacer-x,
+br.spacer-2-x,
+br.spacer-y,
+br.spacer-2-y {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=spacing.css.map */

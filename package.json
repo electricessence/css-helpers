@@ -1,15 +1,15 @@
 {
   "name": "css-helpers",
   "author": "Oren Ferrari",
-  "description": "Useful CSS files for HTML development.",
-  "version": "0.0.2",
+  "description": "Useful CSS (and LESS) files for HTML development.",
+  "version": "1.0.0",
   "private": false,
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.5.2",
     "less": "^2.5.1",
-    "less-plugin-autoprefix": "^1.4.2",
     "less-plugin-clean-css": "^1.5.1"
   }
 }

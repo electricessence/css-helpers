@@ -1,6 +1,8 @@
 {
   "name": "css-helpers",
-  "version": "0.0.1",
+  "author": "Oren Ferrari",
+  "description": "Useful CSS (and LESS) files for HTML development.",
+  "version": "1.0.0",
   "ignore": [
     ".gitignore",
     ".idea",
