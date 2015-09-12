@@ -10,7 +10,7 @@ gulp.task('default', ['css', 'css.release']);
 
 
 const
-	_MIN_CSS = '.min.css',
+	_MIN_CSS     = '.min.css',
 	PATH_LESS    = './less',
 	PATH_CSS     = './css',
 	PATH_CSS_REL = PATH_CSS + '/release';
