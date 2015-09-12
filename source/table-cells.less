@@ -131,7 +131,7 @@
 		&-inneronly {
 
 			// Wrap in local function to enforce automatic formatting.
-			.firstlast() {
+			.firstAndLast() {
 				&:first-child {
 					border-left-width: 0;
 				}
@@ -140,7 +140,7 @@
 				}
 			}
 
-			.applyToCell({ .firstlast() });
+			.applyToCell({ .firstAndLast() });
 		}
 
 	}
